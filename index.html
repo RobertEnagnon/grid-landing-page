@@ -3,66 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire avec Timeline</title>
-    <!-- Lien vers le fichier CSS pour le style du formulaire et des animations -->
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Inscription : Suivez les étapes</h2>
-
-        <!-- Timeline qui affiche les étapes du formulaire sous forme de cercles -->
-        <div class="timeline">
-            <!-- Chaque div représente une étape (step) du formulaire -->
-            <div class="step active" data-step="1">1</div> <!-- Étape 1 -->
-            <div class="step" data-step="2">2</div> <!-- Étape 2 -->
-            <div class="step" data-step="3">3</div> <!-- Étape 3 -->
-            <div class="step" data-step="4">4</div> <!-- Étape 4 -->
+    <header>
+        <h1>Bienvenue sur notre site</h1>
+    </header>
+    <section class="landing">
+        <div class="text">
+            <h2>Un titre accrocheur</h2>
+            <p>Ceci est une section de texte qui décrit votre produit ou service. Vous pouvez ajouter plus d'informations ici pour captiver l'intérêt de vos visiteurs.</p>
+            <button>En savoir plus</button>
         </div>
-        
-        <!-- Formulaire avec plusieurs étapes -->
-        <form id="multiStepForm">
-            <!-- Étape 1 du formulaire -->
-            <div class="form-step active">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" required>
-                <!-- Bouton pour passer à l'étape suivante -->
-                <button type="button" class="next-btn">Suivant</button>
-            </div>
-            
-            <!-- Étape 2 du formulaire -->
-            <div class="form-step">
-                <label for="email">Email :</label>
-                <input type="email" id="email" required>
-                <!-- Bouton pour revenir à l'étape précédente -->
-                <button type="button" class="prev-btn">Précédent</button>
-                <!-- Bouton pour passer à l'étape suivante -->
-                <button type="button" class="next-btn">Suivant</button>
-            </div>
-            
-            <!-- Étape 3 du formulaire -->
-            <div class="form-step">
-                <label for="password">Mot de passe :</label>
-                <input type="password" id="password" required>
-                <!-- Bouton pour revenir à l'étape précédente -->
-                <button type="button" class="prev-btn">Précédent</button>
-                <!-- Bouton pour passer à l'étape suivante -->
-                <button type="button" class="next-btn">Suivant</button>
-            </div>
-            
-            <!-- Étape 4 du formulaire -->
-            <div class="form-step">
-                <label for="confirmation">Confirmation :</label>
-                <input type="text" id="confirmation" required>
-                <!-- Bouton pour revenir à l'étape précédente -->
-                <button type="button" class="prev-btn">Précédent</button>
-                <!-- Bouton pour soumettre le formulaire -->
-                <button type="submit">Valider</button>
-            </div>
-        </form>
-    </div>
-
-    <!-- Inclusion du fichier JavaScript pour la gestion du comportement dynamique -->
-    <script src="script.js"></script>
+        <div class="image">
+            <img src="images/beau.jpg" alt="Une belle image">
+        </div>
+    </section>
 </body>
 </html>
